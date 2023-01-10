@@ -8,4 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Person extends Model
 {
     use HasFactory;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'first_name',
+        'last_name',
+        'email',
+        'phone_number',
+    ];
 }
